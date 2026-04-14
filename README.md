@@ -47,7 +47,7 @@ npm run build
 ```
 
 ## Author
-**Murukan-Gnath** - [g.mn3315@gmail.com](mailto:g.mn3315@gmail.com)
+**niodlab** - [g.mn3315@gmail.com](mailto:g.mn3315@gmail.com)
 
 ## License
 This project is private and for internal use.
