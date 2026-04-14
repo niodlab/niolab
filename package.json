@@ -1,8 +1,17 @@
 {
-  "name": "theneenalab",
+  "name": "niolab",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Murukan-Gnath <g.mn3315@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niodlab/niolab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niodlab/niolab/issues"
+  },
+  "homepage": "https://github.com/niodlab/niolab#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
