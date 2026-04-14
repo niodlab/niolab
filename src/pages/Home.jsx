@@ -19,8 +19,8 @@ const Home = () => {
   const { mode, regionId } = useRegionTheme();
   const heroVideoRef = useRef(null);
   const heroVideoSrc = regionId === 'bahrain'
-    ? '/images/hero-home/hero-Video 1.mp4'
-    : '/images/hero-home/hero-Video 2.mp4';
+    ? `${import.meta.env.BASE_URL}images/hero-home/hero-Video 1.mp4`
+    : `${import.meta.env.BASE_URL}images/hero-home/hero-Video 2.mp4`;
   const ctaBackgroundColor = regionId === 'us' && mode === 'dark' ? '#0A3161' : 'var(--color-accent)';
 
   useEffect(() => {
@@ -68,7 +68,7 @@ const Home = () => {
           muted
           playsInline
           preload="auto"
-          poster="/images/hero-home/heroSlide-1.jpg"
+          poster={`${import.meta.env.BASE_URL}images/hero-home/heroSlide-1.jpg`}
           aria-hidden="true"
           style={{
             position: 'absolute',
@@ -132,7 +132,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="about-visual flex-center">
-                <img src="/images/abstract-ux-01.jpg" alt="Abstract UX Design" style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '1rem', boxShadow: 'var(--shadow-lg)' }} />
+                <img src={`${import.meta.env.BASE_URL}images/abstract-ux-01.jpg`} alt="Abstract UX Design" style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '1rem', boxShadow: 'var(--shadow-lg)' }} />
               </div>
             </div>
           </FadeInWhenVisible>
@@ -193,14 +193,14 @@ const Home = () => {
                   category: 'Product Design',
                   result: 'Increased retention by 25%',
                   summary: 'Reframed a dense financial workflow into a confident daily dashboard for growth teams.',
-                  image: '/images/abstract-ux-01b.jpg'
+                  image: `${import.meta.env.BASE_URL}images/abstract-ux-01b.jpg`
                 },
                 {
                   title: 'E-commerce Redesign',
                   category: 'UX/UI Design',
                   result: 'Improved conversion by 40%',
                   summary: 'Simplified product discovery and checkout so more first-time visitors became paying customers.',
-                  image: '/images/abstract-ux-01c.jpg'
+                  image: `${import.meta.env.BASE_URL}images/abstract-ux-01c.jpg`
                 }
               ].map((project, i) => (
                 <motion.div 
@@ -277,7 +277,7 @@ const Home = () => {
             <div className="grid grid-cols-2" style={{ alignItems: 'center' }}>
               <div>
                 <img
-                  src="/images/service-bg-01.jpg"
+                  src={`${import.meta.env.BASE_URL}images/service-bg-01.jpg`}
                   alt="Nio d'Lab creative studio visual"
                   style={{ width: '100%', height: '500px', objectFit: 'cover', borderRadius: '1rem', boxShadow: 'var(--shadow-lg)' }}
                 />

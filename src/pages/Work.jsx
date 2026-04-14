@@ -10,7 +10,7 @@ const Work = () => {
       category: 'Product Design & Strategy',
       result: 'Increased user retention by 35% in first month',
       summary: 'We redesigned the core portfolio experience so recurring tasks became faster, calmer, and easier to trust.',
-      image: '/images/abstract-ux-01.jpg'
+      image: `${import.meta.env.BASE_URL}images/abstract-ux-01.jpg`
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Work = () => {
       category: 'UX Research & UI Design',
       result: 'Boosted checkout conversion by 42%',
       summary: 'Research uncovered hesitation points across mobile shopping, leading to a cleaner path from browsing to purchase.',
-      image: '/images/abstract-ux-01b.jpg'
+      image: `${import.meta.env.BASE_URL}images/abstract-ux-01b.jpg`
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Work = () => {
       category: 'Enterprise UX',
       result: 'Reduced onboarding time by 60%',
       summary: 'We turned a multi-role clinical dashboard into a guided experience with clearer hierarchy and faster onboarding.',
-      image: '/images/abstract-ux-01c.jpg'
+      image: `${import.meta.env.BASE_URL}images/abstract-ux-01c.jpg`
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const Work = () => {
       category: 'Mobile App Design',
       result: '4.8 star average rating on App Store',
       summary: 'A more reassuring control model and stronger visual feedback made daily home automation feel effortless.',
-      image: '/images/abstract-ux-02.jpg'
+      image: `${import.meta.env.BASE_URL}images/abstract-ux-02.jpg`
     }
   ];
 
