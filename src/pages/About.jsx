@@ -7,10 +7,11 @@ const About = () => {
       <motion.div
         className="about-title-band"
         style={{ 
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)), url(${import.meta.env.BASE_URL}images/niodlab-aboutus.jpg)`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${import.meta.env.BASE_URL}images/niodlab-aboutus.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
+          color: 'white'
         }}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
