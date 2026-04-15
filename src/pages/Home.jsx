@@ -59,7 +59,7 @@ const Home = () => {
     <div className="home-page">
       {/* 2. HERO SECTION */}
       <section className="hero-section" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', minHeight: '100vh', height: '100vh', position: 'relative', overflow: 'hidden', isolation: 'isolate', color: 'white', paddingTop: 0, paddingBottom: '3rem' }}>
-        
+
         {/* Video Background */}
         <video
           ref={heroVideoRef}
@@ -92,7 +92,7 @@ const Home = () => {
             pointerEvents: 'none'
           }}
         ></div>
-        
+
         <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -155,11 +155,11 @@ const Home = () => {
                 { title: 'UI Design', desc: 'Crafting visually stunning, accessible, and responsive interfaces that elevate your brand.' },
                 { title: 'Product Design', desc: 'Holistic design strategy that aligns user needs with long-term business goals.' },
                 { title: 'Usability Testing', desc: 'Validating concepts and identifying friction points through real-user testing sessions.' },
-                { title: 'Design Systems', desc: 'Building scalable and consistent UI component libraries for faster development.' },
+                { title: 'Digital Marketing', desc: 'AI driven modern Digital marketing with customer analysis and insights' },
                 { title: 'UX Audit', desc: 'Comprehensive review of your existing product to uncover usability issues and opportunities.' }
               ].map((service, i) => (
-                <motion.div 
-                  key={service.title} 
+                <motion.div
+                  key={service.title}
                   className="card"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -185,7 +185,7 @@ const Home = () => {
                 View All Projects
               </Link>
             </div>
-            
+
             <div className="grid grid-cols-2">
               {[
                 {
@@ -203,7 +203,7 @@ const Home = () => {
                   image: `${import.meta.env.BASE_URL}images/abstract-ux-01c.jpg`
                 }
               ].map((project, i) => (
-                <motion.div 
+                <motion.div
                   key={project.title}
                   className="work-card featured-work-card"
                   initial={{ opacity: 0, y: 30 }}
@@ -251,7 +251,7 @@ const Home = () => {
                 { step: '03', title: 'Design', desc: 'Iterative prototyping and visual design to bring the experience to life.' },
                 { step: '04', title: 'Deliver', desc: 'Comprehensive handoff and QA to ensure pixel-perfect implementation.' }
               ].map((process, i) => (
-                <motion.div 
+                <motion.div
                   key={process.title}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
