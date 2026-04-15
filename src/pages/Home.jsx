@@ -132,7 +132,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="about-visual flex-center">
-                <img src={`${import.meta.env.BASE_URL}images/abstract-ux-01.jpg`} alt="Abstract UX Design" style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '1rem', boxShadow: 'var(--shadow-lg)' }} />
+                <img src={`${import.meta.env.BASE_URL}images/niodlab-mission.png`} alt="Nio d'Lab Mission" style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '1rem', boxShadow: 'var(--shadow-lg)' }} />
               </div>
             </div>
           </FadeInWhenVisible>

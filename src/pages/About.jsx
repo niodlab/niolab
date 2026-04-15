@@ -6,6 +6,12 @@ const About = () => {
     <div className="page-container" style={{ paddingTop: '8rem', paddingBottom: '6rem' }}>
       <motion.div
         className="about-title-band"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)), url(${import.meta.env.BASE_URL}images/niodlab-aboutus.jpg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

@@ -3,7 +3,7 @@ From your project folder, open the site like this:
 Open Terminal.
 Go to the project folder(COPY PASTE VELOW LINE):
 
-cd "/Users/murukangopinathan/Documents/CodexFiles/The Nio-D-Lab"
+cd "/Users/murukangopinathan/Documents/GITHUB-UPLOAD/The Nio-D-Lab"
 
 --CLICK-ENTER
 
