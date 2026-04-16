@@ -15,8 +15,8 @@ const Work = () => {
       summary: 'We redesigned the core portfolio experience so recurring tasks became faster, calmer, and easier to trust.',
       image: mode === 'light'
         ? `${import.meta.env.BASE_URL}images/work-At-light-mob.png`
-        : `${import.meta.env.BASE_URL}images/work-At-dark-mob.png`
-
+        : `${import.meta.env.BASE_URL}images/work-At-dark-mob.png`,
+      link: 'https://mngdesign.github.io/Murukan-Portfolio/files/pf25-msv.html'
     },
     {
       id: 2,
@@ -72,7 +72,13 @@ const Work = () => {
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
                 <div className="hover-overlay" style={{ position: 'absolute', inset: 0, background: regionId === 'bahrain' ? 'rgb(255 0 0 / 50%)' : 'rgba(0,85,255,0.8)', opacity: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'opacity 0.3s ease' }}>
-                  <span style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 500 }}>View Case Study <ArrowRight size={20} /></span>
+                  {project.link ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 500, textDecoration: 'none', width: '100%', height: '100%', justifyContent: 'center' }}>
+                      View Case Study <ArrowRight size={20} />
+                    </a>
+                  ) : (
+                    <span style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 500 }}>View Case Study <ArrowRight size={20} /></span>
+                  )}
                 </div>
               </div>
               <h3 className="text-2xl" style={{ marginBottom: '0.5rem' }}>{project.title}</h3>
