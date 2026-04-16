@@ -5,16 +5,16 @@ import { useRegionTheme } from '../context/RegionThemeContext';
 
 
 const Work = () => {
-  const { mode } = useRegionTheme();
+  const { mode, regionId } = useRegionTheme();
   const projects = [
     {
       id: 1,
-      title: 'Nova Fintech App',
-      category: 'Product Design & Strategy',
+      title: 'MSV Insurance Agent App',
+      category: ' UX Design & Statergy',
       result: 'Increased user retention by 35% in first month',
       summary: 'We redesigned the core portfolio experience so recurring tasks became faster, calmer, and easier to trust.',
-      image: mode === 'light' 
-        ? `${import.meta.env.BASE_URL}images/work-At-light-mob.png` 
+      image: mode === 'light'
+        ? `${import.meta.env.BASE_URL}images/work-At-light-mob.png`
         : `${import.meta.env.BASE_URL}images/work-At-dark-mob.png`
 
     },
@@ -53,11 +53,11 @@ const Work = () => {
             A collection of recent projects where our strategic design approach solved complex problems and drove measurable business impact.
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-2" style={{ gap: '3rem' }}>
           {projects.map((project, i) => (
-            <motion.div 
-              key={project.id} 
+            <motion.div
+              key={project.id}
               className="work-card"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ const Work = () => {
                   alt={`${project.title} case study cover`}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
-                <div className="hover-overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(0,85,255,0.8)', opacity: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'opacity 0.3s ease' }}>
+                <div className="hover-overlay" style={{ position: 'absolute', inset: 0, background: regionId === 'bahrain' ? 'rgb(255 0 0 / 50%)' : 'rgba(0,85,255,0.8)', opacity: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'opacity 0.3s ease' }}>
                   <span style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 500 }}>View Case Study <ArrowRight size={20} /></span>
                 </div>
               </div>
@@ -87,7 +87,8 @@ const Work = () => {
           ))}
         </div>
       </div>
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .work-card:hover .hover-overlay { opacity: 1 !important; }
       `}} />
     </div>
