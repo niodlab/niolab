@@ -16,7 +16,7 @@ const Work = () => {
       image: mode === 'light'
         ? `${import.meta.env.BASE_URL}images/work-At-light-mob.png`
         : `${import.meta.env.BASE_URL}images/work-At-dark-mob.png`,
-      link: 'https://mngdesign.github.io/Murukan-Portfolio/files/pf25-msv.html'
+      link: 'https://mngdesign.github.io/Murukan-Portfolio/case-studies/msv-life/index.html'
     },
     {
       id: 2,
