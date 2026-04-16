@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useRegionTheme } from '../context/RegionThemeContext';
+
 
 const Work = () => {
+  const { mode } = useRegionTheme();
   const projects = [
     {
       id: 1,
@@ -10,7 +13,10 @@ const Work = () => {
       category: 'Product Design & Strategy',
       result: 'Increased user retention by 35% in first month',
       summary: 'We redesigned the core portfolio experience so recurring tasks became faster, calmer, and easier to trust.',
-      image: `${import.meta.env.BASE_URL}images/abstract-ux-01.jpg`
+      image: mode === 'light' 
+        ? `${import.meta.env.BASE_URL}images/work-At-light-mob.png` 
+        : `${import.meta.env.BASE_URL}images/work-At-dark-mob.png`
+
     },
     {
       id: 2,

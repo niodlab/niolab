@@ -192,7 +192,7 @@ const Home = () => {
                   title: 'Insurance Dashboard',
                   category: 'User Interface Design',
                   result: 'Increased retention by 25%',
-                  summary: 'Transformed intricate insurance processes into a seamless, user-friendly dashboard that empowers agents to manage policies, leads, and clients efficiently.',
+                  summary: 'Simplified complex policy management workflows into a clear, action-driven dashboard, enhanced with an AI agent that streamlines tasks and accelerates processes with minimal user effort.',
                   image: mode === 'light'
                     ? `${import.meta.env.BASE_URL}images/work-At-light-wide.png`
                     : `${import.meta.env.BASE_URL}images/work-At-dark-wide.png`
