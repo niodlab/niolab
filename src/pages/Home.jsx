@@ -189,11 +189,14 @@ const Home = () => {
             <div className="grid grid-cols-2">
               {[
                 {
-                  title: 'Fintech Dashboard',
-                  category: 'Product Design',
+                  title: 'Insurance Dashboard',
+                  category: 'User Interface Design',
                   result: 'Increased retention by 25%',
-                  summary: 'Reframed a dense financial workflow into a confident daily dashboard for growth teams.',
-                  image: `${import.meta.env.BASE_URL}images/abstract-ux-01b.jpg`
+                  summary: 'Transformed intricate insurance processes into a seamless, user-friendly dashboard that empowers agents to manage policies, leads, and clients efficiently.',
+                  image: mode === 'light'
+                    ? `${import.meta.env.BASE_URL}images/work-At-light-wide.png`
+                    : `${import.meta.env.BASE_URL}images/work-At-dark-wide.png`
+
                 },
                 {
                   title: 'E-commerce Redesign',
